@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Bedroom.h"
 
 @interface House : NSObject
 
@@ -14,6 +15,9 @@
 @property (nonatomic, readonly) int numberOfBedrooms;
 @property (nonatomic) BOOL hasHotTub;
 
--(instancetype)initWithAddress: (NSString*)address;
+    //-(instancetype)initWithAddress: (NSString*)address;
+
+@property (nonatomic) Bedroom *frontBedroom;
+@property (nonatomic) Bedroom *backBedroom;
 
 @end
